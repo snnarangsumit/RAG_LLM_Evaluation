@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain-openai
+ragas
+pytest
+pytest-asyncio
+requests
+python-dotenv
+nltk
+unstructured
