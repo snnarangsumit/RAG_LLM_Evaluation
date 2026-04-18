@@ -6,7 +6,6 @@ from ragas.llms import LangchainLLMWrapper
 from dotenv import load_dotenv
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @pytest.fixture
 def llm_wrapper():

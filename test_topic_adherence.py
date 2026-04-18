@@ -12,7 +12,7 @@ async def test_topicAdherence(llm_wrapper, getData):
     topicScore = TopicAdherenceScore(llm=llm_wrapper)
     score = await topicScore.multi_turn_ascore(getData)
     print(score)
-    assert score > 0.8
+    assert float(score) >= 0.8
 
 
 @pytest.fixture

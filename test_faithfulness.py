@@ -5,7 +5,7 @@ from ragas.metrics import Faithfulness
 from utils import load_test_data, get_llm_response
 
 
-@pytest.mark.parametrize("getData", load_test_data("Test4.json"), indirect=True)
+@pytest.mark.parametrize("getData", load_test_data("test_faithfulness.json"), indirect=True)
 @pytest.mark.asyncio
 async def test_faithfulness(llm_wrapper, getData):
     faithful = Faithfulness(llm=llm_wrapper)
